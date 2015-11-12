@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Accordion prefHeight="474.0" prefWidth="300.0">
+         <panes>
+            <TitledPane animated="false" text="Messages">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView mouseTransparent="true" prefHeight="381.0" prefWidth="300.0" />
+                        <TextField layoutX="9.0" layoutY="384.0" prefHeight="25.0" prefWidth="222.0" />
+                        <Button layoutX="231.0" layoutY="384.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Submit" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Data">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="5.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="272.0" text="Upload" textFill="#2121a4" />
+                        <Label layoutX="102.0" layoutY="6.0" prefHeight="17.0" prefWidth="173.0" text="110" textFill="#c32121" />
+                        <Label layoutY="6.0" text="Pending Records:" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </panes>
+      </Accordion>
+    </children>
+</AnchorPane>
